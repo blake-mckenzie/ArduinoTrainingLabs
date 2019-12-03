@@ -38,9 +38,12 @@ void loop() {
   //print out the state of the button:
   Serial.println(buttonState);
   if (buttonState ==HIGH){
-  delay (1000);
-  digitalWrite(led, LOW);
-  delay(1000);
+  digitalWrite(led, HIGH);
   }
+    else {
+      digitalWrite(led, LOW); 
+    }
+
+  {
   delay (1);      //delay in between reads for stability
-}
+}}
